@@ -1,0 +1,149 @@
+@import '~@angular/material/theming';
+@include mat-core();
+// use http://mcg.mbitson.com/
+
+$default-contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+);
+/* For use in src/lib/core/theming/_palette.scss */
+$md-peachdark: (
+    50 : #fff5f0,
+    100 : #ffe6d9,
+    200 : #ffd5c0,
+    300 : #ffc4a7,
+    400 : #ffb794,
+    500 : #ffaa81,
+    600 : #ffa379,
+    700 : #ff996e,
+    800 : #ff9064,
+    900 : #ff7f51,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #fff9f6,
+    A700 : #ffe6dd,
+    contrast: $default-contrast
+);
+
+$md-greenish: (
+    50 : #e4f4f2,
+    100 : #bbe4dd,
+    200 : #8dd3c7,
+    300 : #5fc1b1,
+    400 : #3db3a0,
+    500 : #1ba68f,
+    600 : #189e87,
+    700 : #14957c,
+    800 : #108b72,
+    900 : #087b60,
+    A100 : #aaffe9,
+    A200 : #77ffdb,
+    A400 : #44ffce,
+    A700 : #2affc7,
+    contrast: $default-contrast
+);
+
+$md-blue: (
+    50 : #e0ebee,
+    100 : #b3ced4,
+    200 : #80adb7,
+    300 : #4d8c9a,
+    400 : #267484,
+    500 : #005b6e,
+    600 : #005366,
+    700 : #00495b,
+    800 : #004051,
+    900 : #002f3f,
+    A100 : #74d3ff,
+    A200 : #41c2ff,
+    A400 : #0eb2ff,
+    A700 : #00a6f4,
+    contrast: $default-contrast
+);
+
+$md-greenishlight: (
+    50 : #eef9f7,
+    100 : #d4f1ec,
+    200 : #b7e8df,
+    300 : #9adfd2,
+    400 : #84d8c9,
+    500 : #6ed1bf,
+    600 : #66ccb9,
+    700 : #5bc6b1,
+    800 : #51c0a9,
+    900 : #3fb59b,
+    A100 : #ffffff,
+    A200 : #d3fff5,
+    A400 : #a0ffe9,
+    A700 : #86ffe4,
+    contrast: $default-contrast
+);
+
+$md-peachlight: (
+    50 : #fffdfc,
+    100 : #fff9f7,
+    200 : #fff5f2,
+    300 : #fff1ec,
+    400 : #ffeee8,
+    500 : #ffebe4,
+    600 : #ffe9e1,
+    700 : #ffe5dd,
+    800 : #ffe2d9,
+    900 : #ffddd1,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+    contrast: $default-contrast
+);
+
+
+$primary-text: #212121;
+$secondary-text: #757575;
+$divider: #BDBDBD;
+$text: #FFFFFF;
+
+
+$md-warnred: (
+    50 : #fcf3f3,
+    100 : #f9e0e0,
+    200 : #f5cccc,
+    300 : #f0b8b8,
+    400 : #eda8a8,
+    500 : #ea9999,
+    600 : #e79191,
+    700 : #e48686,
+    800 : #e17c7c,
+    900 : #db6b6b,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffeaea,
+    A700 : #ffd0d0,
+    contrast: $default-contrast,
+);
+
+
+
+$primary: mat-palette($md-greenish);
+$primary-light: mat-palette($md-greenishlight);
+// $primary-dark: mat-palette($md-orangedark);
+$accent:  mat-palette($md-peachdark);
+$warn: mat-palette($md-warnred);
+
+$chat-fade: 0;
+
+$theme: mat-light-theme($primary, $accent);
+
+@include angular-material-theme($theme);
