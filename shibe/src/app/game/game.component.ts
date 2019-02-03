@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DogalogComponent } from '../dogalog/dogalog.component'
 import { Shibe } from '../game-objects/shibe'
 import { SHIBES } from '../game-objects/shibes'
 import { Toy } from '../game-objects/toy'
@@ -16,21 +17,20 @@ export class GameComponent implements OnInit {
   shibes: Shibe[] = SHIBES;
   toys: Toy[] = TOYS;
   poses: string[] = POSES
+  selectedShibe: Shibe;
 
   ownedShibes: Shibe[] = [
     { id: 2, name: 'Christopphe', colour: 'orange', love: 100, rarity: 10, age: 0, pose: "sitting" },
     { id: 3, name: 'Ella', colour: 'orange', love: 100, rarity: 5, age: 0, pose: "sitting" },
   ];
 
-  selectedShibe: Shibe;
-  onSelect(shibe: Shibe): void {
-    this.selectedShibe = shibe;
-  }
-
   constructor() { }
   ngOnInit() {
   //  drawDogs();
   }
+  // functions
+
+
 }
 /*
   //function to draw ownedShibes

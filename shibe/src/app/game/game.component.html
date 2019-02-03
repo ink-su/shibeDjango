@@ -1,34 +1,9 @@
+
 <div id="game-container">
-  <img id="room-display" src="../../assets/images/scenes/scene.png">
+  <!--<img id="room-display" src="../../assets/images/scenes/scene.png">-->
    <div id="dog-container">
-
-      <h2> my shibes </h2>
-
-      <ul>
-        <li *ngFor="let shibe of shibes"
-            [class.selected]="shibe === selectedShibe"
-            (click)="onSelect(shibe)">
-          <span> {{ shibe.name }} </span>
-        </li>
-      </ul>
-      <div *ngIf="selectedShibe">
-        <h4> {{ selectedShibe.name }} Details </h4>
-        <span>id: </span> {{ selectedShibe.id }}
-        <span>colour: </span> {{ selectedShibe.colour }}
-        <span>rarity: </span> {{ selectedShibe.rarity }}
-        <span>love: </span> {{ selectedShibe.love }}
-        <span>age: </span> {{ selectedShibe.age }}
-
-        <label>name:
-          <input [(ngModel)]="selectedShibe.name" placeholder="name">
-        </label>
-
-      </div>
+     <app-dogalog></app-dogalog>
    </div>
-
-
-
-
 
    <div id="toy-container"></div>
 

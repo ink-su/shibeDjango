@@ -12,7 +12,8 @@ import { TaskItemComponent } from './task-page/task-item/task-item.component';
 import { TaskListComponent } from './task-page/task-list/task-list.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { GameComponent } from './game/game.component'
+import { GameComponent } from './game/game.component';
+import { DogalogComponent } from './dogalog/dogalog.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { GameComponent } from './game/game.component'
     TaskItemComponent,
     LoginComponent,
     RegisterComponent,
-    GameComponent
+    GameComponent,
+    DogalogComponent,
   ],
   imports: [
     BrowserModule,
