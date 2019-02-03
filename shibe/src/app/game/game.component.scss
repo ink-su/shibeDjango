@@ -19,17 +19,27 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: "assets/images/scenes/scene.png";
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#room-display {
+  height: 100%;
+  width: auto;
 }
 
 #dog-container {
+  position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
 }
 
 #toy-container {
+  position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
 }
 
 .toy {
