@@ -22,9 +22,19 @@ $(document).mousemove(function (e) {
   let x = e.pageX;
   let y = e.pageY;
   let height = ($('#loader').height() / 2.2)
-  //
-  $('#loader').css({'left': x, 'top': y});
+  let offset = $('#loader').offset()
+  //direct dog to correct location
+  //X axis
+  if x > offset.left {
+    $('#loader').css({'left': offset.left + 20});
+  } else if x < offset.left {
+    $('#loader').css({'left': offset.left - 20});
+  }
+  //Y axis
+  if y > offset.top {
+    $('#loader').css({'top': offset.top + 20});
+  } else if y < offset.top {
+    $('#loader').css({'top': offset.top - 20});
+  };
   $('#loader-shadow').css({'left': x, 'top': y + height});
 });
-
-//animation
