@@ -83,9 +83,9 @@ function drawDogs() {
     document.getElementById('dog-container').innerHTML += `<div class='dog' style='top:${pose[poseID].top}px; left:${pose[poseID].left}px;'><img src='../../assets/images/shibes/shibe${ownedDogs[i]}_${pose[poseID].name}'></div>`;
     //appends poseID to usedPoses Array
     usedPoses.push({
-          name: pose[poseID].name;
-          top: pose[poseID].top;
-          left: pose[poseID].left;
+          name: pose[poseID].name,
+          top: pose[poseID].top,
+          left: pose[poseID].left,
       });
     //removes pose from setOfPoses Array
     setOfPoses.splice(poseID, 1);
