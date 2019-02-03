@@ -35,15 +35,16 @@ export class GameComponent implements OnInit {
 //wildDogs: Array<[dog name, rarity]>
 let wildDogs: Array<[string, number]> = [
   ['yellow', 10],
-  ['christophe', 10],
-  ['ella', 5],
-  ['michelle', 5],
-  ['yamomomo', 8],
-  ['colin', 7],
-  ['john legend', 2],
+  ['christophe', 8],
+  ['ella', 1],
+  ['michelle', 2],
+  ['yamomomo', 6],
+  ['colin', 9],
+  ['john legend', 3],
   ['pompom', 3],
   ['dognald glover', 3],
   ['julie', 3],
+  ['tofu-chan', 10],
 ];
 
 //dog types in possession
