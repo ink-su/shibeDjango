@@ -22,6 +22,7 @@ import {
   MatSnackBarModule,
   MatTabsModule,
   MatTooltipModule,
+  MatToolbarModule,
 } from '@angular/material';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ScrollDispatchModule } from '@angular/cdk/scrolling';
@@ -49,6 +50,7 @@ import { ScrollDispatchModule } from '@angular/cdk/scrolling';
     MatSnackBarModule,
     MatTabsModule,
     MatTooltipModule,
+    MatToolbarModule,
     // CDK
     DragDropModule,
     ScrollDispatchModule,

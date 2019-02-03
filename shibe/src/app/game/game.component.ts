@@ -42,7 +42,7 @@ export class GameComponent implements OnInit {
 
 //dog types in the cloud
 //wildDogs: Array<[dog name, rarity]>
-let wildDogs: Shibe[] = [
+let shibes: Shibe[] = [
   { id: 1, name: 'Yellow', colour: 'orange', love: 0, rarity: 10, age: 0 },
   { id: 2, name: 'Christopphe', colour: 'orange', love: 0, rarity: 10, age: 0 },
 ];
@@ -66,7 +66,7 @@ let wildToys: Array<[string, number]> = [
 ];
 
 //toy types in possession
-let ownedDogs: string[] = [
+let ownedToys: string[] = [
 
 ];
 

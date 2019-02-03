@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { TaskListComponent } from './app-page/task-list/task-list.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from  './register/register.component';
 import { GameComponent } from './game/game.component';
+
 const routes: Routes = [
-  { path: 'tasks', component: TaskListComponent },
-//  { path: 'calendar', component: CalendarComponent },
+  { path: '', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'game', component: GameComponent },
 ];
 
