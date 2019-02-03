@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { GameComponent } from './game/game.component';
 import { DogalogComponent } from './dogalog/dogalog.component';
+import { LoadingComponent } from './dogalog/dogalog.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DogalogComponent } from './dogalog/dogalog.component';
     RegisterComponent,
     GameComponent,
     DogalogComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,

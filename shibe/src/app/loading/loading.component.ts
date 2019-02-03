@@ -10,11 +10,21 @@ export class LoadingComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
 
-document.getElementById('canvas').onmousemove = function(e) {
-  document.getElementById('loader').style.left = e.pageX + "px";
-  document.getElementById('loader').style.top = e.pageY + "px";
-}
+// dog movement
+
+$(document).mousemove(function (e) {
+  //get location of cursor
+  let x = e.pageX;
+  let y = e.pageY;
+  let height = ($('#loader').height() / 2.2)
+  //
+  $('#loader').css({'left': x, 'top': y});
+  $('#loader-shadow').css({'left': x, 'top': y + height});
+});
+
+//animation

@@ -11,6 +11,54 @@
   z-index: 999;
   top: 100px;
   left: 100px;
-  width: 50px;
-  height: auto;
+  width: auto;
+  height: 16%;
+  animation: hop 0.6s infinite linear;
+  transform: scaleX(-1);
+}
+
+#loader-shadow {
+  position: absolute;
+  z-index: 99;
+  top: 100px;
+  left: 100px;
+  width: auto;
+  height: 16%;
+  animation: shadow 0.6s infinite linear;
+  transform: scale(-1, -1);
+  opacity: 0;
+}
+
+
+//animation: hop 1s infinite linear;
+
+
+@keyframes hop {
+  20% {
+    transform: scaleX(-1) (rotate(-5deg) translate(0.5em,-1em));
+  }
+  40% {
+    transform: scaleX(-1) (rotate(5deg) translate(1.5em,-2em));
+  }
+  60% {
+    transform: scaleX(-1) (rotate(0) translate(4em,0));
+  }
+  75% {
+    transform: scaleX(-1) (rotate(0) translate(4em,0));
+  }
+}
+
+@keyframes shadow {
+  20% {
+    transform: scale(-1, -0.5) (rotate(-5deg) translate(0.5em,-1em));
+  }
+  40% {
+    transform: scale(-1, -0.5) (rotate(5deg) translate(1.5em,-2em));
+  }
+  60% {
+    transform: scale(-1, -0.5) (rotate(0) translate(4em,0));
+  }
+  75% {
+    transform: scale(-1, -0.25) (rotate(0) translate(4em,0));
+  }
 }
