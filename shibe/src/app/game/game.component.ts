@@ -13,3 +13,35 @@ export class GameComponent implements OnInit {
   }
 
 }
+
+
+
+
+/******************************
+    VARIABLE DECLARATIONS
+*******************************/
+
+
+//dog types in the cloud
+let wildDogs: string[] = [
+
+];
+
+//dog types in possession
+let ownedDogs: string[] = [
+
+];
+
+//toy types in the cloud
+let wildToys: [string, number][] = [
+  ['bone', 1]
+
+];
+
+//toy types in possession
+let ownedDogs: string[] = [
+
+];
+
+//room status
+let expanded: boolean = false
