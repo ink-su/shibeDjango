@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Shibe } from '../shibe'
+import { Owner } from '../owner'
 
 @Component({
   selector: 'app-game',
@@ -15,7 +16,15 @@ export class GameComponent implements OnInit {
     love: 30
   }
 
+  shibes: Shibe[] = [
+    { id: 1, name: 'Yellow', colour: 'orange', love: 0, rarity: 10 },
+    { id: 2, name: 'Christopphe', colour: 'orange', love: 0, rarity: 10 },
+  ];
 
+  selectedShibe: Shibe;
+  onSelect(shibe: Shibe): void {
+    this.selectedShibe = shibe;
+  }
 
   constructor() { }
   ngOnInit() {
@@ -33,22 +42,14 @@ export class GameComponent implements OnInit {
 
 //dog types in the cloud
 //wildDogs: Array<[dog name, rarity]>
-let wildDogs: Array<[string, number]> = [
-  ['yellow', 10],
-  ['christophe', 10],
-  ['ella', 5],
-  ['michelle', 5],
-  ['yamomomo', 8],
-  ['colin', 7],
-  ['john legend', 2],
-  ['pompom', 3],
-  ['dognald glover', 3],
-  ['julie', 3],
+let wildDogs: Shibe[] = [
+  { id: 1, name: 'Yellow', colour: 'orange', love: 0, rarity: 10, age: 0 },
+  { id: 2, name: 'Christopphe', colour: 'orange', love: 0, rarity: 10, age: 0 },
 ];
 
 //dog types in possession
-let ownedDogs: string[] = [
-
+let ownedDogs: Shibe[] = [
+  { id: 3, name: 'Mr. Shibe', colour: 'orange', love: 10, rarity: 10, age: 0 },
 ];
 
 //toy types in the cloud

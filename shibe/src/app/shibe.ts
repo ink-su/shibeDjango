@@ -3,4 +3,6 @@ export class Shibe {
   name: string;
   colour: string;
   love: number;
+  rarity: number;
+  age: number;
 }
