@@ -13,3 +13,8 @@ export class LoadingComponent implements OnInit {
   }
 
 }
+
+document.getElementById('canvas').onmousemove = function(e) {
+  document.getElementById('loader').style.left = e.pageX + "px";
+  document.getElementById('loader').style.top = e.pageY + "px";
+}
