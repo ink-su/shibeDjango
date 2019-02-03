@@ -66,7 +66,7 @@ let wildToys: Array<[string, number]> = [
 ];
 
 //toy types in possession
-let ownedDogs: string[] = [
+let ownedToys: string[] = [
 
 ];
 
