@@ -13,8 +13,8 @@
   left: 100px;
   width: auto;
   height: 16%;
-  animation: hop 0.6s infinite linear;
   transform: scaleX(-1);
+  animation: hop 0.6s infinite linear;
 }
 
 #loader-shadow {
@@ -26,7 +26,6 @@
   height: 16%;
   animation: shadow 0.6s infinite linear;
   transform: scale(-1, -1);
-  opacity: 0;
 }
 
 

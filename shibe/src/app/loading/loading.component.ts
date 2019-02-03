@@ -21,20 +21,10 @@ $(document).mousemove(function (e) {
   //get location of cursor
   let x = e.pageX;
   let y = e.pageY;
-  let height = ($('#loader').height() / 2.2)
-  let offset = $('#loader').offset()
+  //get direction of cursor
+  let height = ($('#loader').height() / 2.2);
+  let width = ($('#loader').width());
   //direct dog to correct location
-  //X axis
-  if x > offset.left {
-    $('#loader').css({'left': offset.left + 20});
-  } else if x < offset.left {
-    $('#loader').css({'left': offset.left - 20});
-  }
-  //Y axis
-  if y > offset.top {
-    $('#loader').css({'top': offset.top + 20});
-  } else if y < offset.top {
-    $('#loader').css({'top': offset.top - 20});
-  };
-  $('#loader-shadow').css({'left': x, 'top': y + height});
+  $('#loader').css({'left': x - width, 'top': y});
+  $('#loader-shadow').css({'left': x - width, 'top': y + height});
 });
