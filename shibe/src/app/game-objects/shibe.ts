@@ -5,4 +5,5 @@ export class Shibe {
   love: number;
   rarity: number;
   age: number;
+  pose: string;
 }
