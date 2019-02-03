@@ -9,12 +9,13 @@ import { MaterialModule } from './material.module';
 
 import { AppComponent } from './app.component';
 import { TaskListComponent } from './app-page/task-list/task-list.component';
-
+import { GameComponent } from './game/game.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    TaskListComponent
+    TaskListComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
