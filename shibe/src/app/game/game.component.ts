@@ -9,16 +9,23 @@ import { Owner } from '../owner'
 })
 
 export class GameComponent implements OnInit {
-  shibe: Shibe = {
-    id: 1,
-    name: 'mr shiba',
-    colour: 'orange',
-    love: 30
-  }
+
 
   shibes: Shibe[] = [
-    { id: 1, name: 'Yellow', colour: 'orange', love: 0, rarity: 10 },
-    { id: 2, name: 'Christopphe', colour: 'orange', love: 0, rarity: 10 },
+    { id: 1, name: 'Yellow', colour: 'orange', love: 0, rarity: 10, age: 0},
+    { id: 2, name: 'Christopphe', colour: 'orange', love: 100, rarity: 10, age: 0 },
+    { id: 3, name: 'Ella', colour: 'orange', love: 100, rarity: 5, age: 0 },
+    { id: 4, name: 'Michelle', colour: 'pink', love: 10000000, rarity: 5, age: 0 },
+    { id: 5, name: 'Yamomomo', colour: 'orange', love: 0, rarity: 10, age: 0 },
+    { id: 6, name: 'Colin', colour: 'orange', love: 0, rarity: 10, age: 0 },
+    { id: 7, name: 'John Legend', colour: 'orange', love: 0, rarity: 10, age: 0 },
+    { id: 8, name: 'Pompom', colour: 'orange', love: 0, rarity: 10, age: 0 },
+    { id: 9, name: 'Julie', colour: 'orange', love: 0, rarity: 10, age: 0 },
+    { id: 10, name: 'Mr. Shibe', colour: 'orange', love: 0, rarity: 10, age: 0 },
+  ];
+  ownedShibes: Shibe[] = [
+    { id: 2, name: 'Christopphe', colour: 'orange', love: 100, rarity: 10, age: 0 },
+    { id: 3, name: 'Ella', colour: 'orange', love: 100, rarity: 5, age: 0 },
   ];
 
   selectedShibe: Shibe;
@@ -31,21 +38,6 @@ export class GameComponent implements OnInit {
   }
 
 }
-
-
-
-
-/******************************
-    VARIABLE DECLARATIONS
-*******************************/
-
-
-//dog types in the cloud
-//wildDogs: Array<[dog name, rarity]>
-let shibes: Shibe[] = [
-  { id: 1, name: 'Yellow', colour: 'orange', love: 0, rarity: 10, age: 0 },
-  { id: 2, name: 'Christopphe', colour: 'orange', love: 0, rarity: 10, age: 0 },
-];
 
 //dog types in possession
 let ownedDogs: Shibe[] = [
