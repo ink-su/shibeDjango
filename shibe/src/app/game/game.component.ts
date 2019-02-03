@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Shibe } from '../shibe'
+import { DogalogComponent } from '../dogalog/dogalog.component'
+import { Shibe } from '../game-objects/shibe'
+import { SHIBES } from '../game-objects/shibes'
+import { Toy } from '../game-objects/toy'
+import { TOYS } from '../game-objects/toys'
+import { Owner } from '../game-objects/owner'
+import { POSES } from '../game-objects/poses'
 
 @Component({
   selector: 'app-game',
@@ -8,67 +14,57 @@ import { Shibe } from '../shibe'
 })
 
 export class GameComponent implements OnInit {
-  shibe: Shibe = {
-    id: 1,
-    name: 'mr shiba',
-    colour: 'orange',
-    love: 30
-  }
+  shibes: Shibe[] = SHIBES;
+  toys: Toy[] = TOYS;
+  poses: string[] = POSES
+  selectedShibe: Shibe;
 
-
+  ownedShibes: Shibe[] = [
+    { id: 2, name: 'Christopphe', colour: 'orange', love: 100, rarity: 10, age: 0, pose: "sitting" },
+    { id: 3, name: 'Ella', colour: 'orange', love: 100, rarity: 5, age: 0, pose: "sitting" },
+  ];
 
   constructor() { }
   ngOnInit() {
+  //  drawDogs();
   }
+  // functions
+
 
 }
+/*
+  //function to draw ownedShibes
+  function drawDogs() {
+    //clearss dogs usedPoses and sets setOfPoses to poses
+    document.getElementById('dog-container').innerHTML = "";
+    var usedPoses = [];
+    var setOfPoses = poses;
+    //loops through ownedDogs
+    for(var i = 0 ; i < ownedDogs.length ; i++ ) {
+      //(Math.random() * x) where x is # of poses -- randomly generates a poseID
+      var poseID = Math.Ceiling((Math.random() * setOfPoses.length))
+      //inserts doge at index i in ownedDogs in pose poseID
+      document.getElementById('dog-container').innerHTML +=
+          `<div class='dog' style='top:${pose[poseID].top}px;
+          left:${pose[poseID].left}px;'>
+          <img src='../../assets/images/shibes/shibe${ownedDogs[i]}_${pose[poseID].name}'>
+          </div>`;
+      //appends poseID to usedPoses Array
+      usedPoses.push({
+            name: pose[poseID].name,
+            top: pose[poseID].top,
+            left: pose[poseID].left,
+        });
+      //removes pose from setOfPoses Array
+      setOfPoses.splice(poseID, 1);
+    }
+  }
+}
+*/
 
-
-
-
-/******************************
-    VARIABLE DECLARATIONS
-*******************************/
-
-
-//dog types in the cloud
-//wildDogs: Array<[dog name, rarity]>
-let wildDogs: Array<[string, number]> = [
-  ['yellow', 10],
-  ['christophe', 8],
-  ['ella', 1],
-  ['michelle', 2],
-  ['yamomomo', 6],
-  ['colin', 9],
-  ['john legend', 3],
-  ['pompom', 3],
-  ['dognald glover', 3],
-  ['julie', 3],
-  ['tofu-chan', 10],
-];
-
-//dog types in possession
-let ownedDogs: string[] = [
-
-];
-
-//toy types in the cloud
-//wildToys: Array<[toy name, rarity]>
-let wildToys: Array<[string, number]> = [
-  ['ball', 10],
-  ['bone', 10],
-  ['cat', 5],
-  ['cubert', 5],
-  ['duck', 8],
-  ['mallows', 7],
-  ['mrberry', 2],
-  ['poro', 3],
-];
-
-//toy types in possession
-let ownedToys: string[] = [
-
-];
 
 //room status
-let expanded: boolean = false
+//let expanded: boolean = false
+
+//poses
+//make objects here with pose name and left and top locations

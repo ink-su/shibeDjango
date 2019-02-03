@@ -1,12 +1,12 @@
 
 @font-face {
   font-family: VT323;
-  src: url(assets/fonts/VT323-Regular.ttf) format("opentype");
+  src: url(assets/fonts/VT323-Regular.ttf);
 }
 
 html, body { height: 100%; }
 body {
-  margin: 0;
+  margin: 50;
 }
 * {
   box-sizing: border-box;
