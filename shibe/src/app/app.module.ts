@@ -8,13 +8,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material.module';
 
 import { AppComponent } from './app.component';
-import { TaskListComponent } from './app-page/task-list/task-list.component';
+import { TaskItemComponent } from './task-page/task-item/task-item.component';
+import { TaskListComponent } from './task-page/task-list/task-list.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TaskListComponent
+    TaskListComponent,
+    TaskItemComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
