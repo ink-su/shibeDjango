@@ -12,7 +12,7 @@ import { TaskItemComponent } from './task-page/task-item/task-item.component';
 import { TaskListComponent } from './task-page/task-list/task-list.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-
+import { GameComponent } from './game/game.component'
 
 @NgModule({
   declarations: [
@@ -21,6 +21,7 @@ import { RegisterComponent } from './register/register.component';
     TaskItemComponent,
     LoginComponent,
     RegisterComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
